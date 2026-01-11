@@ -10,3 +10,9 @@ import { getNotification, createNotification, updateNotification, deleteNotifica
 import { getReview, createReview, updateReview, deleteReview } from "./controllers/reviewController";
 import { getFeedback, createFeedback, updateFeedback, deleteFeedback } from "./controllers/feedbackController";
 import { getContact, createContact, updateContact, deleteContact } from "./controllers/contactController";
+
+const router = express.Router();
+
+router.get("/users", getUsers);
+
+export default router;
